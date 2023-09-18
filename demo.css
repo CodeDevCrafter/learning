@@ -1,0 +1,213 @@
+body{
+    background-color: rgb(245, 245, 245);
+}
+.main-content{
+    width: 1226px;
+    margin-right: auto;
+    margin-left: auto;
+    position: relative;
+}
+.main-content .title{
+    width: 1226px;
+    height: 58px;
+    margin: 0;
+    font-size: 22px;
+    font-weight: 200;
+    line-height: 58px;
+    color: #333;
+}
+.main-content .title .more{
+    font-size: 16px;
+    line-height: 58px;
+    color: #424242;
+    position: absolute;
+    right: 20px;
+    top: 0;
+}
+
+.main-content .big{
+    width: 234px;
+    height: 614px;
+    position: absolute;
+    top: 58px;
+    background-color: white;
+}
+.main-content .s1{
+    width: 234px;
+    height: 300px;
+    position: absolute;
+    top: 58px;
+    left: 234px;
+    margin-left: 14px;
+    background-color: white;
+}
+.main-content .s2{
+    width: 234px;
+    height: 300px;
+    position: absolute;
+    top: 58px;
+    left: 468px;
+    margin-left: 28px;
+    background-color: white;
+}
+.main-content .s3{
+    width: 234px;
+    height: 300px;
+    position: absolute;
+    top: 58px;
+    left: 702px;
+    margin-left: 42px;
+    background-color: white;
+}
+.main-content .s4{
+    width: 234px;
+    height: 300px;
+    position: absolute;
+    top: 58px;
+    left: 936px;
+    margin-left: 56px;
+    background-color: white;
+}
+.main-content .s5{
+    width: 234px;
+    height: 300px;
+    position: absolute;
+    top: 372px;
+    left: 234px;
+    margin-left: 14px;
+    background-color: white;
+}
+.main-content .s6{
+    width: 234px;
+    height: 300px;
+    position: absolute;
+    top: 372px;
+    left: 468px;
+    margin-left: 28px;
+    background-color: white;
+}
+.main-content .s7{
+    width: 234px;
+    height: 300px;
+    position: absolute;
+    top: 372px;
+    left: 702px;
+    margin-left: 42px;
+    background-color: white;
+}
+.main-content .s8{
+    width: 234px;
+    height: 300px;
+    position: absolute;
+    top: 372px;
+    left: 936px;
+    margin-left: 56px;
+    background-color: white;
+}
+.main-content .s1 .ss1{
+    padding-top: 20px;
+    padding-bottom: 20px ;
+    width: 234px;
+    height: 260px;
+}
+.main-content .s2 .ss2{
+    padding-top: 20px;
+    padding-bottom: 20px ;
+    width: 234px;
+    height: 260px;
+}
+.main-content .s3 .ss3{
+    padding-top: 20px;
+    padding-bottom: 20px ;
+    width: 234px;
+    height: 260px;
+}
+.main-content .s4 .ss4{
+    padding-top: 20px;
+    padding-bottom: 20px ;
+    width: 234px;
+    height: 260px;
+}
+.main-content .s5 .ss5{
+    padding-top: 20px;
+    padding-bottom: 20px ;
+    width: 234px;
+    height: 260px;
+}
+.main-content .s6 .ss6{
+    padding-top: 20px;
+    padding-bottom: 20px ;
+    width: 234px;
+    height: 260px;
+}
+.main-content .s7 .ss7{
+    padding-top: 20px;
+    padding-bottom: 20px ;
+    width: 234px;
+    height: 260px;
+}
+.main-content .s8 .ss8{
+    padding-top: 20px;
+    padding-bottom: 20px ;
+    width: 234px;
+    height: 260px;
+}
+.main-content .phone{
+    width: 160px;
+    height: 160px;
+    margin-left: 37px;
+    margin-right: 37px;
+    margin-bottom: 18px;
+}
+.name{
+    text-align: center;
+    font-size: 14px;
+    font-weight: 400;
+    color: #333;
+}
+.affect{
+    text-align: center;
+    margin: 0 10px 10px;
+    height: 18px;
+    font-size: 12px;
+    color: #b0b0b0;
+}
+.price{
+    text-align: center;
+    color: #ff6700;
+    position: relative;
+    bottom: 10px;
+}
+a{
+    text-decoration: none;
+}
+.main-content .more:hover{
+    color: #FF6700;
+}
+.button{
+    width: 12px;
+    height: 12px;
+    padding: 4px;
+    margin-left: 8px;
+    border-radius: 16px;
+    font-size: 12px;
+    line-height: 12px;
+    background: #b0b0b0;
+    color: #fff;
+    vertical-align: 1px;
+    position: absolute;
+    right: 0;
+    top:18px;
+}
+.button:hover{
+    color: #FF6700;
+}
+.big.s1,.s2,.s3,.s4,.s5,.s6,.s7,.s8{
+    transition: .2s;
+}
+.big:hover,.s1:hover,.s2:hover,.s3:hover,.s4:hover,.s5:hover,.s6:hover,.s7:hover,.s8:hover{
+    transform: translate3d(0, -2px, 0);
+    /*定义3D转换，只使用Y轴的值，向上移动两个像素*/ 
+    box-shadow: 0 17px 40px 0 rgba(0, 0, 0, .19);
+ /*添加阴影，水平阴影位置为0；垂直阴影位置为17px；模糊距离40px；阴影的尺寸0；颜色为rgba(0, 0, 0, .19)*/
+}
