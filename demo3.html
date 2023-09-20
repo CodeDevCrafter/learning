@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>demo3</title>
+    <style>
+        *{
+            font-family: Arial;
+            font-size: 14px;
+            margin: 0;
+            padding: 0;
+            border : -none;
+        }
+        a { text-decoration: none; }
+        ul { list-style: none;}
+        body{
+            background-color: rgb(245, 245, 245);
+        }
+        .container{
+            width: 1226px;
+            height: 686px;
+            margin: 0 auto;
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .title{
+            width: 1226px;
+            height: 58px;
+            position: relative;
+        }
+        .shouji{
+            margin: 0;
+            font-size: 22px;
+            font-weight: 200;
+            line-height: 58px;
+            color: #333;
+        }
+        .container .title a span{
+            font-size: 16px;
+            line-height: 58px;
+            color: #424242;
+            position: absolute;
+            right: 20px;
+            top: 0;
+        }
+        .container .title a span:hover,
+        .container .title a i:hover{
+            color: #ff6700;
+        }
+        .big{
+            width: 234px;
+            height: 628px;
+        }
+        .container .big a img{
+            width: 234px;
+            height: 614px;
+        }
+        .phone{
+            width: 978px;
+            height: 628px;
+            margin-left: 14px;
+        }
+        ul{
+            display: flex;
+            flex-wrap: wrap;
+        }
+        ul li{
+            width: 234px;
+            height: 300px;
+            background-color:white;
+            margin-left: 14px;
+            margin-bottom: 14px;
+            cursor: pointer;
+        }
+        ul li:first-child{
+            margin-left: 0;
+        }
+        ul li:nth-child(5){
+            margin-left: 0;
+        }
+        ul li a img{
+            width: 160px;
+            height: 160px;
+            margin-left: 37px;
+            margin-right: 37px;
+            margin-bottom: 18px;
+        }
+        .name {
+            text-align: center;
+            font-size: 14px;
+            font-weight: 400;
+            color: #333;
+            margin-left: 10px;
+            margin-right: 10px;
+            margin-bottom: 2px;
+        }
+        .affect{
+            text-align: center;
+            margin: 0 10px 10px 10px;
+            height: 18px;
+            font-size: 12px;
+            color: #b0b0b0;
+        }
+        .price{
+            text-align: center;
+            color: #ff6700;
+            margin: 0,10px,14px,10px;
+        }
+        
+        .container .big:hover,
+        .container .phone ul li:hover{
+            transform: translate3d(0, -2px, 0);
+            /*定义3D转换，只使用Y轴的值，向上移动两个像素*/
+            box-shadow: 0 17px 40px 0 rgba(0, 0, 0, 0.19);
+            /*添加阴影，水平阴影位置为0；垂直阴影位置为17px；模糊距离40px；阴影的尺寸0；颜色为rgba(0, 0, 0, .19)*/
+        }
+        .button {
+            width: 12px;
+            height: 12px;
+            padding: 4px;
+            margin-left: 8px;
+            border-radius: 16px;
+            font-size: 12px;
+            line-height: 12px;
+            background: #b0b0b0;
+            color: #fff;
+            vertical-align: 1px;
+            position: absolute;
+            right: 0;
+            top: 18px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="title">
+            <span class="shouji">手机</span>
+            <a href="https://www.mi.com/p/1915.html"><span>查看更多</span><i class="button">＞</i></a>
+        </div>
+        <div class="big">
+            <a href="https://www.mi.com/shop/buy/detail?product_id=19026">
+                <img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/9613bd4127fede053f8ba5049eff0392.jpeg?thumb=1&w=293&h=768&f=webp&q=90" alt="">
+            </a>
+        </div>
+        <div class="phone">
+            <ul>
+                <li>
+                    <a href="https://www.mi.com/shop/buy/detail?product_id=19019">
+                        <img src="https://cdn.cnbj1.fds.api.mi-img.com/nr-pub/202308111609_92d3c7105793aed5afd3e609132840c9.jpg?thumb=1&w=250&h=250&f=webp&q=90" alt="">
+                        <h3 class="name">Xiaomi MIX Fold 3</h3>
+                        <p class="affect">轻薄折叠屏|徕卡光学│全焦段四摄</p>
+                        <p class="price">8999元起</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.mi.com/shop/buy/detail?product_id=19026">
+                        <img src="https://cdn.cnbj1.fds.api.mi-img.com/nr-pub/202308122142_7e259a200b6aaec5a2c0445a665e38c3.png?thumb=1&w=250&h=250&f=webp&q=90" alt="">
+                        <h3 class="name">Redmi K60至尊版</h3>
+                        <p class="affect">旗舰体验全面超预期</p>
+                        <p class="price">2599元起</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.mi.com/shop/buy/detail?product_id=19054">
+                        <img src="https://cdn.cnbj1.fds.api.mi-img.com/nr-pub/202308081914_12255c6dc58e78e32afe9665b13fbaaa.png?thumb=1&w=250&h=250&f=webp&q=90" alt="">
+                        <h3 class="name">Redmi 12 5G</h3>
+                        <p class="affect">5G骁龙芯,大屏大电星</p>
+                        <p class="price">949元起</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.mi.com/shop/buy/detail?product_id=18542">
+                        <img src="https://cdn.cnbj1.fds.api.mi-img.com/nr-pub/202305291422_e96776c7e1e35cebb454457c3344d3cd.png?thumb=1&w=250&h=250&f=webp&q=90" alt="">
+                        <h3 class="name">Redmi Note 12T Pro</h3>
+                        <p class="affect">年度LCD屏幕之光</p>
+                        <p class="price">1499元起</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.mi.com/shop/buy/detail?product_id=18482">
+                        <img src="https://cdn.cnbj1.fds.api.mi-img.com/nr-pub/202305241112_ecb14876904f09f3cbc605350a02eff0.png?thumb=1&w=250&h=250&f=webp&q=90" alt="">
+                        <h3 class="name">Xiaomi Civi 3</h3>
+                        <p class="affect">仿生双眸天生出色</p>
+                        <p class="price">2499元起</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.mi.com/shop/buy/detail?product_id=18363">
+                        <img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/555070388ddc76c4de4b2c42b12c3c1d.png?thumb=1&w=250&h=250&f=webp&q=90" alt="">
+                        <h3 class="name">Xiaomi 13 Ultra</h3>
+                        <p class="affect">徕卡光学全焦段四摄|—英寸可变光圈|</p>
+                        <p class="price">5999元起</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.mi.com/shop/buy/detail?product_id=18268">
+                        <img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/8b046feca0a7bb3f7b961a9690babb1b.jpg?thumb=1&w=250&h=250&f=webp&q=90" alt="">
+                        <h3 class="name">Redmi Note 12 Turbo</h3>
+                        <p class="affect">狂暴引擎超强性能释放</p>
+                        <p class="price">1799元起</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.mi.com/shop/buy/detail?product_id=18075">
+                        <img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/a6cec580260ceb20ae6a885c2c65c611.png?thumb=1&w=250&h=250&f=webp&q=90" alt="">
+                        <h3 class="name">Redmi K60</h3>
+                        <p class="affect">骁龙8+│2K高光直屏|5500mAh+67...</p>
+                        <p class="price">2099元起</p>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
